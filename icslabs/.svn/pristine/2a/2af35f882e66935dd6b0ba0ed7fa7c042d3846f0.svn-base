@@ -1,0 +1,14 @@
+#the answer of lastweek assignment
+#516413990003
+
+1.
+ps x | sort -d
+
+2.
+cat /usr/share/dict/word | grep ^a |wc -w 
+
+3.
+ls -l -S -r | head -n 5
+
+4.
+echo 'Hello world!' > echo.sh;chmod +x echo.sh

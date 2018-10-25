@@ -1,0 +1,33 @@
+i
+Wed 06 Jun 2018 03:00:12 CST: 255.127.0.0 http://10.0.2.15:43271/ 483
+Wed 06 Jun 2018 03:00:14 CST: 252.127.0.0 http://10.0.2.15:43955/FFpPplUXIZ3adeB9/bREHW9eA8NEr4Vp?ZQyRwX1yn06sI=VQ3x2uJmWtZ&jBglmrHsj5lZ=Dlpy4JkxjsV 445
+Wed 06 Jun 2018 03:00:47 CST: 254.127.0.0 http://10.0.2.15:35627/ 476
+Wed 06 Jun 2018 03:01:30 CST: 254.127.0.0 http://127.0.0.1:42497/ 494
+Wed 06 Jun 2018 03:01:32 CST: 254.127.0.0 http://127.0.0.1:36901/I0SeQcsnPtdJU9/KczEeGogn3ANbnRZh?2Xt79shse2=85yfYjmO7YD&wJW1teAv5q1gaqi=SgKHQ3aylpHtiKqzxqJ 386
+Wed 06 Jun 2018 03:07:18 CST: 255.127.0.0 http://10.0.2.15:44011/ 429
+Wed 06 Jun 2018 03:07:20 CST: 254.127.0.0 http://127.0.0.1:33893/iig8yoIZbgZ/jXVVUfkrgTwB7OK8PPM?ZA92kAYN9UjB2ZopQ744=whgYujNPZsMSu7L7&gNUzQJJ6zSJWJy0Ngdj8=XBVbs4KI32 446
+Wed 06 Jun 2018 03:07:53 CST: 255.127.0.0 http://10.0.2.15:37819/ 357
+Wed 06 Jun 2018 03:08:14 CST: 255.127.0.0 http://127.0.0.1:34429/ 499
+Wed 06 Jun 2018 03:08:16 CST: 254.127.0.0 http://127.0.0.1:45411/lKI3GPMt1YcgEGo9t0xH/WsLWI3L1wP?cgJAH85F5exIOSu3=JsfXUOAPFTg3z4HVA6a3&loaimnml4Kbfyydvll=BsVrvRh4bgODsPO 466
+Wed 06 Jun 2018 03:08:50 CST: 255.127.0.0 http://127.0.0.1:42729/ 371
+Accepted connection from (10.0.2.15, 52168)
+request start:GET / HTTP/1.1
+<<request header>>
+GET / HTTP/1.1
+Accept-Charset: latin-1
+Connection: close
+
+start forward response...
+response Body-Length = 371
+<<reponsed header>>
+HTTP/1.1 403 Forbidden
+Content-Length: 371
+
+start forward response body...
+temp:371body:Î"J¥O–Pß¿[”¥Ù<	ªË×Ôo‚(µ«éwóhÒLOë
+Œ+ˆ•Œ8¬$GZˆi¥U€¦Itªv’ä.:@»åõ2G¾’×.
+O,¥·¹NÃˆw÷ìÚcv?ÓÅû.ÂˆàmD6GêÓ_û™Dšæt­‰—1;‡¸³ê-ÃBè‘†KÒ¼ëäJQÝ:îÒ÷{‰èäƒôbWêÊ	eâ•y 9“ÎÉ¾™iBs±[äÏÎÁtK“¸	¸,ŸûÚåƒD$¸ƒí‹€è”ŠCÒíñ Ã°¼Œ–À×0$£O¼ðmãÙÁã?;×8V¢¦qÆT¹ã"ÆÉ‡ŒLyQÃ(¢2¦Bï§ ¶ÑDšà¥èWŽ/æžTF,Õ!go#"AN|Í<tuº³Þn©1(wkN£7±ËƒÝñC÷Œ.@š]W˜èÐîí2y²tOkYºQ™šËnTc¶Møý¥log:
+Wed 06 Jun 2018 03:08:50 CST: 255.127.0.0 http://127.0.0.1:42729/ 371
+Completed.
+Wed 06 Jun 2018 03:14:16 CST: 255.127.0.0 http://www.cmu.edu/hub/index.html 18446744073709551615
+Wed 06 Jun 2018 03:18:10 CST: 252.127.0.0 http://www.cmu.edu/hub/index.html 18446744073709551615

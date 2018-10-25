@@ -1,0 +1,103 @@
+/*
+ * BUG#0
+ * description: 
+     miss semicolon
+ * location: 
+ *   int a = 10  (line 18)
+ * evidence: 
+ *   test.c:19: error: two or more data types in declaration specifiers
+ */
+
+BUG#1
+description:
+#include<stdio.h>
+location:
+#include section
+evidence:
+should include<stdio.h>
+
+
+BUG#2
+description:
+enum{~~};
+location:
+before struct record
+evidence:
+missing ; after enum difinition
+
+
+BUG#3
+description:
+
+location:
+in main loop
+after if sentence
+evidence:
+missing }
+
+
+BUG#4
+description:
+itelator mitake should be j++
+location:
+line 126
+evidence:
+
+
+
+BUG#5
+description:
+malloc(rec_max*rec_len);
+location:
+in main 
+evidence:
+mistakes of size allocating to buf.
+
+
+BUG#6
+description:
+record_t
+location:
+line 115
+evidence:
+
+
+
+
+BUG#7
+description:
+enum{rec_len= key_len+recno_len+pad_len}
+location:
+the part of enum difiniton
+evidence:
+the whole lengh of one record should be equal to 100 bytes.
+
+
+
+
+BUG#8
+description:
+file mode mistake
+location:
+fopen(fn,"a");
+evidence:
+
+
+
+BUG#9
+description:
+should be cnt<buf_nrec(not <=)
+location:
+in fil_buf function
+evidence:
+
+
+
+
+BUG#10
+description:
+
+location:
+
+evidence:
+

@@ -1,0 +1,73 @@
+#Huichuan Hui
+#516413990003
+
+.pos 0
+init:
+  # set up stack structure
+	irmovq Stack, %rsp
+	irmovq Stack, %rbp
+	# invoke function
+	irmovq $3, %rax
+	pushq %rax
+	irmovq dest, %rax
+	pushq %rax
+	irmovq src, %rax
+	pushq %rax
+	call copy_block
+	halt
+
+copy_block:
+  pushq %rbp
+	rrmovq %rsp, %rbp
+
+	# result: %rax
+	# 1/4: %rbx
+	# len: %rcx
+	# val: %rdx
+	# src: %rsi
+	# dest: %rdi
+	pushq %rbx
+	pushq %rsi
+	pushq %rdi
+
+	mrmovq 16(%rbp), %rsi
+	mrmovq 24(%rbp), %rdi
+	mrmovq 32(%rbp), %rcx
+	xorq %rax, %rax
+
+Loop:
+	andq %rcx, %rcx
+	jle Done
+	irmovq $8, %rbx
+	mrmovq 0(%rsi), %rdx
+	addq %rbx, %rsi
+	rmmovq %rdx, 0(%rdi)
+	addq %rbx, %rdi
+	xorq %rdx, %rax
+	irmovq $1, %rbx
+	subq %rbx, %rcx
+	jmp Loop
+
+Done:
+  popq %rdi
+	popq %rsi
+	popq %rbx
+	rrmovq %rbp, %rsp
+	popq %rbp
+	ret
+
+.align 8
+# Source block
+src:
+    .quad 0x00a
+    .quad 0x0b0
+    .quad 0xc00
+# Destination block
+dest:
+    .quad 0x111
+    .quad 0x222
+    .quad 0x333
+
+# stack
+    .pos 0x300
+Stack:
